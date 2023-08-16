@@ -164,7 +164,7 @@ a.menu:hover{
     }
     .callback-block__plate{
         padding: 55px 200px 55px 59px;
-        background-image: url(/img/percentage.svg), url(../img/percentage.svg);
+        background-image: url(../img/percentage.svg), url(../img/percentage.svg);
         background-position: right calc(50% - 177px) bottom 19px, right calc(50% - 452px) top -26px;
         background-repeat: no-repeat, no-repeat;
         background-size: 355px, 204px;
