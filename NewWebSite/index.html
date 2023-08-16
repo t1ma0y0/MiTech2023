@@ -1,264 +1,269 @@
-<!doctype html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MiTech</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link href="./style.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-  </head>
-  <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  
-    <!-- шапка-->
-    <header>     
-        <div class="row ml-100 mr-100">
-          <div class="col-lg-3 col-12 my-auto text-center ">
-            <img class="logo" src="./img/logo.png" alt="MiTech">
-          </div>         
-          <div class="col-lg col-12 mt50 mb50">           
-                <a href="#remont" class="menu">
-                  Ремонт техники
-                </a>
-                <a href="#createsites" class="menu">
-                  Создания сайтов
-                </a>   
-                <a href="#about" class="menu">
-                  О компании
-                </a>    
-                <a href="#contact" class="menu">
-                  Контакты
-                </a>                   
-          </div>
-          <div class="col-lg col-12 mt50 mb50 text-lg-end text-center ">
-            <a  href="tel:+79998788257" class="menu">           
-              +7 (999) 878-82-57
-            </a>
-            <a class="menu">
-              Заказать звонок
-            </a>
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MiTech</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="./style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+  </script>
+
+  <!-- шапка-->
+  <header>
+    <div class="header-wrapper">
+      <div class="header-logo">
+        <img class="logo" src="./img/logo.png" alt="MiTech">
+      </div>
+      <div class="header-titles">
+        <a href="#remont" class="menu">
+          Ремонт техники
+        </a>
+        <a href="#createsites" class="menu">
+          Создания сайтов
+        </a>
+        <a href="#about" class="menu">
+          О компании
+        </a>
+        <a href="#contact" class="menu">
+          Контакты
+        </a>
+      </div>
+      <div class="header-number">
+        <a href="tel:+79998788257" class="menu">
+          +7 (999) 878-82-57
+        </a>
+        <a class="menu">
+          Заказать звонок
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Блок слайдреа, нужно доделать.Накидал быстро слайдер.-->
+  <section class="ml-100 mr-100 mainslider">
+    <div class="slider">
+      <div class="item">
+        <a class="previous" onclick="previousSlide()">&#10094;</a>
+        <div class="item_col">
+          <h2 class="text-start">Ремонт техники <br>в Москве и области</h2>
+          <ul>
+            <li class="text-start">Качественно</li>
+            <li class="text-start">Быстро</li>
+            <li class="text-start">Не дорого</li>
+          </ul>
+          <div class="text-start">
+            <button class="btn">консультация</button>
+            <button class="btn">узнать цену</button>
+
           </div>
         </div>
-    </header>
-
-<!-- Блок слайдреа, нужно доделать.Накидал быстро слайдер.-->
-    <section class="ml-100 mr-100 mainslider">
-      <div class="slider">
-        <div class="item">
-            <a class="previous" onclick="previousSlide()">&#10094;</a>
-            <div class="item_col">
-               <h2 class="text-start">Ремонт техники <br>в Москве и области</h2>
-               <ul>
-                <li class="text-start">Качественно</li>
-                <li class="text-start">Быстро</li>
-                <li class="text-start">Не дорого</li>
-               </ul>
-               <div class="text-start">
-                <button class="btn">консультация</button>
-                <button class="btn">узнать цену</button>
-               </div>
-            </div>           
-            <img src="https://avatars.mds.yandex.net/get-altay/5486790/2a0000017d56f896e279d7516097755f081c/XXL" alt="">
-            <a class="next" onclick="nextSlide()">&#10095;</a>
-        </div>
-
-        <div class="item">
-          <a class="previous" onclick="previousSlide()">&#10094;</a>
-          <div class="item_col">
-             <h2 class="text-start">Создание/Редизайн/Сопровождение <br>Сайтов</h2>
-             <ul>
-              <li class="text-start">Качественно</li>
-              <li class="text-start">Быстро</li>
-              <li class="text-start">Не дорого</li>
-             </ul>
-             <div class="text-start">
-              <button class="btn">консультация</button>
-              <button class="btn">узнать цену</button>
-             </div>
-          </div>           
-          <img src="https://i.pinimg.com/originals/87/84/cb/8784cb962b0593b5efb51100b12ec2ed.jpg" alt="">
-          <a class="next" onclick="nextSlide()">&#10095;</a>
+        <img src="https://avatars.mds.yandex.net/get-altay/5486790/2a0000017d56f896e279d7516097755f081c/XXL" alt="">
+        <a class="next" onclick="nextSlide()">&#10095;</a>
       </div>
 
-        
-        <div class="arrow_mobile">
-            <a class="previous_mobile" onclick="previousSlide()">&#10094;</a>
-            <a class="next_mobile" onclick="nextSlide()">&#10095;</a>
+      <div class="item">
+        <a class="previous" onclick="previousSlide()">&#10094;</a>
+        <div class="item_col">
+          <h2 class="text-start">Создание/Редизайн/Сопровождение <br>Сайтов</h2>
+          <ul>
+            <li class="text-start">Качественно</li>
+            <li class="text-start">Быстро</li>
+            <li class="text-start">Не дорого</li>
+          </ul>
+          <div class="text-start">
+            <button class="btn">консультация</button>
+            <button class="btn">узнать цену</button>
+          </div>
         </div>
-        
+        <img src="https://i.pinimg.com/originals/87/84/cb/8784cb962b0593b5efb51100b12ec2ed.jpg" alt="">
+        <a class="next" onclick="nextSlide()">&#10095;</a>
+      </div>
+
+
+      <div class="arrow_mobile">
+        <a class="previous_mobile" onclick="previousSlide()">&#10094;</a>
+        <a class="next_mobile" onclick="nextSlide()">&#10095;</a>
+      </div>
+
     </div>
-    </section>
+  </section>
 
   <!-- Блок с иконками-->
-    <section class="ml100 mr100 mt50 secondicons">
-      <div class="row">
-        <div class="col-lg-4 col-12  text-center">
-          <img src="/img/garantiya.svg" alt="Гарантия качества">
-          <p class="mini-title">Гарантия на ремонт </p>
-          <p class="text-box">На все услуги мы предоставляем гарантию .</p>
-        </div>
-        <div class="col-lg-4 col-12 mt-lg-0 mt-2 text-center">
-          <img src="/img/diagnostic-icon.svg" alt="Гарантия качества">
-          <p class="mini-title">Быстрая диагностика</p>
-          <p class="text-box">Проверим устройство и выявим<br>
-            причину поломки перед устранением<br>
-            неисправности.</p>
-        </div>
-        <div class="col-lg-4 col-12 mt-lg-0 mt-2   text-center">
-          <img class="feedback" src="/img/feedback.png" alt="Гарантия качества">
-          <p class="mini-title">Быстрая обратная связь</p>
-          <p class="text-box">Для нас важно держать с вами связь.</p>
-        </div>       
+  <section class="ml100 mr100 mt50 secondicons">
+    <div class="row">
+      <div class="col-lg-4 col-12  text-center">
+        <img src="./img/garantiya.svg" alt="Гарантия качества">
+        <p class="mini-title">Гарантия на ремонт </p>
+        <p class="text-box">На все услуги мы предоставляем гарантию .</p>
       </div>
-    </section>
+      <div class="col-lg-4 col-12 mt-lg-0 mt-2 text-center">
+        <img src="./img/diagnostic-icon.svg" alt="Гарантия качества">
+        <p class="mini-title">Быстрая диагностика</p>
+        <p class="text-box">Проверим устройство и выявим<br>
+          причину поломки перед устранением<br>
+          неисправности.</p>
+      </div>
+      <div class="col-lg-4 col-12 mt-lg-0 mt-2   text-center">
+        <img class="feedback" src="./img/feedback.png" alt="Гарантия качества">
+        <p class="mini-title">Быстрая обратная связь</p>
+        <p class="text-box">Для нас важно держать с вами связь.</p>
+      </div>
+    </div>
+  </section>
 
-  <!-- О нас-->123123
-    <section class="about mt50 ml100 mr100 bg-gradient">
-        <div class="row justify-content-between mt50">
-          <h1 class="text-center mb50"> Как мы работаем?</h1>
-          <div class="col-lg-6 col-12 border-rigth">
-            Мы преуспеваем в бизнесе, основанном на человеческом потенциале, 
-            и верим в его силу, способствующую стратегическим, организационным, 
-            экономическим и социальным изменениям.
-          </div>
-          <div class="col-lg-6 col-12 pt-lg-0 pt-3">
-            Мы преуспеваем в бизнесе, основанном на человеческом потенциале, 
-            и верим в его силу, способствующую стратегическим, организационным, 
-            экономическим и социальным изменениям.          
-          </div>
+  <!-- О нас-->
+  <section class="about mt50 ml100 mr100 bg-gradient">
+    <div class="row justify-content-between mt50">
+      <h1 class="text-center mb50"> Как мы работаем?</h1>
+      <div class="col-lg-6 col-12 border-rigth">
+        Мы преуспеваем в бизнесе, основанном на человеческом потенциале,
+        и верим в его силу, способствующую стратегическим, организационным,
+        экономическим и социальным изменениям.
+      </div>
+      <div class="col-lg-6 col-12 pt-lg-0 pt-3">
+        Мы преуспеваем в бизнесе, основанном на человеческом потенциале,
+        и верим в его силу, способствующую стратегическим, организационным,
+        экономическим и социальным изменениям.
+      </div>
 
-        </div>
-    </section>
-    
-    <!-- Блок формы-->
-      <section class="callback-block section mt50 ml100 mr100" id="callback-anchor">
+    </div>
+  </section>
+
+  <!-- Блок формы-->
+  <section class="callback-block section mt50 ml100 mr100" id="callback-anchor">
+    <div class="row">
+      <div class="col-12">
+        <div class="callback-block__plate text-center text-lg-start">
           <div class="row">
-            <div class="col-12">
-              <div class="callback-block__plate text-center text-lg-start">
-                <div class="row">
-                  <div class="col-12 col-md-12 col-lg-8">
-                    <div class="callback-block__wrap">
-                      <h3 class="section-title">Заявка на ремонт</h3>
-                      <p class="section-subtitle">
-                        При оформлении заявки на сайте дарим скидку 20% на первый ремонт!
+            <div class="col-12 col-md-12 col-lg-8">
+              <div class="callback-block__wrap">
+                <h3 class="section-title">Заявка на ремонт</h3>
+                <p class="section-subtitle">
+                  При оформлении заявки на сайте дарим скидку 20% на первый ремонт!
+                </p>
+                <form action="process_form.php" class="callback__form" method="post">
+                  <div class="row">
+                    <div class="col-12 col-md-6 mb-3 mb-lg-0 ">
+                      <div class="request-form__element">
+                        <label for="">
+                          <input class="callback__input form-control" type="text" id="input-name" placeholder="Ваше имя"
+                            name="name" value="" autocomplete="off">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3 mb-lg-0">
+                      <div class="request-form__element">
+                        <label for="">
+                          <input class="callback__input form-control phoneMask" type="text" id="input-phone"
+                            name="phone" placeholder="8 (___) ___-__-__" value="" autocomplete="off" required="">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 w-100 ">
+                      <div class="request-form__element request-form__element-btn">
+                        <button type="submit" class="btn-sub btn btn-submit "><span>Оставить заявку</span></button>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <p class="callback__acceptance">
+                        Нажимая на кнопку, вы соглашаетесь <br class="d-md-none"> с <a href="/policy/"><span
+                            class="policy">политикой конфиденциальности</span></a>.
                       </p>
-                        <form action="" class="callback__form">           
-                              <div class="row">
-                                <div class="col-12 col-md-6 mb-3 mb-lg-0 ">
-                                  <div class="request-form__element">
-                                    <label for="">
-                                      <input class="callback__input form-control" type="text" id="input-name" placeholder="Ваше имя" name="name" value="" autocomplete="off">
-                                    </label>
-                                  </div>
-                                </div>
-                                <div class="col-12 col-md-6 mb-3 mb-lg-0">
-                                  <div class="request-form__element">
-                                    <label for="">
-                                      <input class="callback__input form-control phoneMask" type="text" id="input-phone" name="phone" placeholder="8 (___) ___-__-__" value="" autocomplete="off" required="">
-                                    </label>
-                                  </div>
-                                </div>                   
-                                <div class="col-12 col-md-6 w-100 ">
-                                  <div class="request-form__element request-form__element-btn">
-                                    <button type="submit" class="btn-sub btn btn-submit "><span>Оставить заявку</span></button>
-                                  </div>
-                                </div>
-                                <div class="col-12">
-                                  <p class="callback__acceptance">
-                                    Нажимая на кнопку, вы соглашаетесь <br class="d-md-none"> с <a href="/policy/"><span class="policy">политикой конфиденциальности</span></a>.
-                                  </p>
-                                </div>
-                              </div>       
-                            <input type="hidden" name="af_action" value="6882edaba4b32ef07b059975df0f4fe2">
-                        </form>
                     </div>
                   </div>
-                </div>
+                  <input type="hidden" name="af_action" value="6882edaba4b32ef07b059975df0f4fe2">
+                </form>
               </div>
             </div>
           </div>
-      </section>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <!-- подвал -->
-      <footer class="mt50 bg-white">
-        <div class="row ml-100 mr-100">
-            <div class="col-lg-6 col-12 my-auto text-center ">
-              <img class="logo" src="./img/logo.png" alt="MiTech">
-            </div> 
-            <div class="col-lg-6 col-12  text-lg-start text-center  mt-3">
-                <div class="col-12">           
-                  <a href="#remont" class="foter-text col-12">
-                    Услуги
-                  </a>
-                  <a href="#createsites" class="foter-text col-12">
-                    О нас
-                  </a>       
-                  <a href="#contact" class="foter-text col-12">
-                    Контакты
-                  </a>                   
-              </div>
-              <div class="col-12  my-3">            
-                <a href="#remont" class="foter-text col-12">    
-                  <img class="feedback" src="./img/vk-icon.png" alt="vk"></img>
-               </a>    
-               <a href="#remont" class="foter-text col-12">
-                <img class="feedback" src="./img/tg-icon.png" alt="tg"></img>
-              </a>
-              <a href="#remont" class="foter-text col-12">
-                <img class="feedback" src="./img/wp-icon.png" alt="vk"></img>
-              </a>
-              </div>  
-              
-          </div> 
-          <div class="col-12 footer-copyright text-center ">
-            © 2023&nbsp;Все права защищены  «MiTech»
-          </div>     
-        </div>     
-      </footer>
 
-    <script>
-      let slideIndex = 1;
-/* Вызываем функцию, которая реализована ниже: */
-      showSlides(slideIndex);
+  <!-- подвал -->
+  <footer class="mt50 bg-white">
+    <div class="row ml-100 mr-100">
+      <div class="col-lg-6 col-12 my-auto text-center ">
+        <img class="logo" src="./img/logo.png" alt="MiTech">
+      </div>
+      <div class="col-lg-6 col-12  text-lg-start text-center  mt-3">
+        <div class="col-12">
+          <a href="#remont" class="foter-text col-12">
+            Услуги
+          </a>
+          <a href="#createsites" class="foter-text col-12">
+            О нас
+          </a>
+          <a href="#contact" class="foter-text col-12">
+            Контакты
+          </a>
+        </div>
+        <div class="col-12  my-3">
+          <a href="#remont" class="foter-text col-12">
+            <img class="feedback" src="./img/vk-icon.png" alt="vk">
+            <./img> </a> <a href="#remont" class="foter-text col-12">
+              <img class="feedback" src="./img/tg-icon.png" alt="tg">
+              <./img> </a> <a href="#remont" class="foter-text col-12">
+                <img class="feedback" src="./img/wp-icon.png" alt="vk">
+                <./img> </a> </div> </div> <div class="col-12 footer-copyright text-center ">
+                  © 2023&nbsp;Все права защищены «MiTech»
+        </div>
+      </div>
+  </footer>
 
-/* Увеличиваем индекс на 1 — показываем следующий слайд: */
-      function nextSlide() {
-         showSlides(slideIndex += 1);
+
+  <script>
+    let slideIndex = 1;
+    /* Вызываем функцию, которая реализована ниже: */
+    showSlides(slideIndex);
+
+    /* Увеличиваем индекс на 1 — показываем следующий слайд: */
+    function nextSlide() {
+      showSlides(slideIndex += 1);
+    }
+
+    /* Уменьшаем индекс на 1 — показываем предыдущий слайд: */
+    function previousSlide() {
+      showSlides(slideIndex -= 1);
+    }
+
+    /* Устанавливаем текущий слайд: */
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    /* Функция перелистывания: */
+    function showSlides(n) {
+      /* Обращаемся к элементам с названием класса "item", то есть к картинкам: */
+      let slides = document.getElementsByClassName("item");
+
+      /* Проверяем количество слайдов: */
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
       }
 
-/* Уменьшаем индекс на 1 — показываем предыдущий слайд: */
-      function previousSlide() {
-         showSlides(slideIndex -= 1);  
+      /* Проходим по каждому слайду в цикле for: */
+      for (let slide of slides) {
+        slide.style.display = "none";
       }
-
-/* Устанавливаем текущий слайд: */
-      function currentSlide(n) {
-         showSlides(slideIndex = n);
-      }
-
-/* Функция перелистывания: */
-      function showSlides(n) {
-  /* Обращаемся к элементам с названием класса "item", то есть к картинкам: */
-         let slides = document.getElementsByClassName("item");
-  
-  /* Проверяем количество слайдов: */
-          if (n > slides.length) {
-             slideIndex = 1
-          }
-          if (n < 1) {
-             slideIndex = slides.length
-          }
-
-  /* Проходим по каждому слайду в цикле for: */
-          for (let slide of slides) {
-             slide.style.display = "none";
-          }
-  /* Делаем элемент блочным: */
-          slides[slideIndex - 1].style.display = "flex";    
-      }
+      /* Делаем элемент блочным: */
+      slides[slideIndex - 1].style.display = "flex";
+    }
   </script>
-  </body>
+</body>
 
 </html>
