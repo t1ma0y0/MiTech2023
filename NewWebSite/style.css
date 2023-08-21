@@ -72,7 +72,7 @@ h2 {
 
 @media (max-width: 900px) {
     .header-wrapper {
-        grid-template-columns: [start] 5px [logoStart] auto [logoEnd] [titleStart] auto [titleEnd] 10px [numStart] auto [numEnd] 5px [end];
+        grid-template-columns: 5px start end 5px;
     }
 
     .header-logo {
@@ -80,6 +80,7 @@ h2 {
     }
 
     .header-titles {
+        grid-column: start / end;
         grid-row: 2;
         text-align: center;
         align-self: center;
@@ -214,6 +215,11 @@ h2 {
         /* Делаем кнопки круглыми */
     }
 
+}
+
+.block_icons {
+    height: auto;
+    margin: auto auto;
 }
 
 
