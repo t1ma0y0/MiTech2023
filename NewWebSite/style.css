@@ -4,9 +4,10 @@
 }
 
 body {
-    height: 100vh;
     background-color: #f5f5f5;
-
+    background: -webkit-linear-gradient(0deg, rgb(0, 188, 255) 19%, rgb(139, 201, 242));
+    background: -moz-linear-gradient(0deg, rgb(0, 188, 255) 19%, rgb(139, 201, 242));
+    background: linear-gradient(0deg, rgb(0, 188, 255) 19%, rgb(139, 201, 242));
 }
 
 h2 {
@@ -19,6 +20,7 @@ h2 {
     grid-template-columns: [start] 100px [logoStart] auto [logoEnd] 10px [titleStart] 1fr [titleEnd] 10px [numStart] auto [numEnd] 100px [end];
     align-items: center;
     transition: grid-template-columns 0.5s ease-in-out;
+    margin-bottom: 30px;
 }
 
 .header-logo {
@@ -29,12 +31,13 @@ h2 {
     grid-column: titleStart / titleEnd;
     display: flex;
     justify-content: center;
-    font-size: 18px !important;
+    font-size: 24px !important;
 }
 
 .header-titles a {
     margin: 0 10px;
     white-space: nowrap;
+    font-size: 20px !important;
 }
 
 .header-number {
@@ -52,6 +55,16 @@ h2 {
     .header-wrapper {
         grid-template-columns: [start] 50px [logoStart] auto [logoEnd] 10px [titleStart] 1fr [titleEnd] 10px [numStart] auto [numEnd] 50px [end];
     }
+
+    .header-titles a {
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 1629px) {
+    .header-titles a {
+        font-size: 16px !important;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -67,6 +80,8 @@ h2 {
         margin-left: 59%;
         margin-right: 50%;
     }
+
+
 
 }
 
@@ -101,7 +116,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f5f5f5;
     height: 400px;
     overflow: hidden;
 
@@ -122,7 +136,7 @@ h2 {
     display: flex;
     padding: 50px;
     transition: 0.5s;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(190, 233, 248);
     border-radius: 20px;
     margin: 0;
     padding: auto;
@@ -220,8 +234,66 @@ h2 {
 .block_icons {
     height: auto;
     margin: auto auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    width: 80%;
 }
 
+.mini-title {
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 10px;
+    letter-spacing: 0.2px;
+}
+
+.feedback {
+    width: 50px;
+    height: 50px;
+}
+
+.text-box {
+    word-break: break-word;
+    font-size: 18px;
+    margin: 0 auto;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 1629px) {
+    .mini-title {
+        font-size: 18px;
+    }
+
+    .text-box {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .block_icons {
+        height: auto;
+        margin: auto auto;
+        margin-top: 50px;
+        margin-bottom: 70px;
+        width: 80%;
+    }
+
+    .text-box {
+        margin-bottom: 30px;
+    }
+}
+
+
+.form_wrapper {
+    background-color: rgb(128, 217, 250) 30%;
+}
+
+.footer {
+    background: linear-gradient(0deg, rgb(63, 196, 244) 19%, rgb(39, 166, 249));
+}
 
 .btn {
     padding: 10px;
@@ -242,32 +314,7 @@ h2 {
     cursor: pointer;
 }
 
-@media (max-width: 1440px) {
-    .header-wrapper {
-        grid-template-columns: [start] 50px [logoStart] auto [logoEnd] 10px [titleStart] 1fr [titleEnd] 10px [numStart] auto [numEnd] 50px [end];
-    }
-}
 
-.mini-title {
-    font-weight: 800;
-    font-size: 14px;
-    margin-bottom: 0;
-    letter-spacing: 0.2px;
-}
-
-.feedback {
-    width: 50px;
-    height: 50px;
-}
-
-.text-box {
-    word-break: break-word;
-    font-size: 14px;
-    margin: 0 auto;
-    font-weight: 500;
-    letter-spacing: 0.3px;
-    line-height: 18px;
-}
 
 .footer-copyright {
     margin-bottom: 14px;
